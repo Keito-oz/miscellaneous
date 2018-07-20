@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+body {
+	margin: 0;
+}
+.container {
+	padding: 0 16px 0 16px;
+}
+
+/* 
+各パートにパディング、背景、テキスト色などを指定する
+<div class="container">の子要素に指定する
+*/
+.header-inner {
+	background: #bad7f5;
+}
+.nav-inner {
+	color: #fff;
+	background: #0086f9;
+}
+.main-inner {
+	background: #fffde3;
+
+	/* 
+	 レイアウトのイメージをしやすいように高さを設定。
+	 通常のwebデザインではレイアウトで高さを指定しない
+	*/
+	height: 400px;
+}
+.sidebar-inner {
+	background: #c0f5b9;
+}
+.footer-inner {
+	background: #bad7f5;
+}
+
+/* わかりやすくするために適用しているCSS */
+body {
+	color: #444;
+}
+main p:last-child {
+	margin-bottom: 0;
+}
+.main-title {
+	margin: 0;
+}
+.copyright {
+	margin: 0;
+}

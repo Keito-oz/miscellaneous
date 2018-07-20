@@ -1,0 +1,106 @@
+@charset "utf-8";
+
+body {
+	margin: 0;
+}
+.container {
+	margin: 0 auto 0 auto;
+	max-width: 1000px;
+}
+section .container {
+	display: flex;
+	flex-flow: column;
+}
+
+/* 
+各パートにパディング、背景、テキスト色などを指定する
+<div class="container">の子要素に指定する
+*/
+.header-inner {
+	padding: 10px 10px 0 10px;
+	background: #bad7f5;
+}
+main {
+	padding: 20px 10px 20px 10px;
+	background: #fffde3;
+
+	/* 
+	 レイアウトのイメージをしやすいように高さを設定。
+	 通常のwebデザインではレイアウトで高さを指定しない
+	*/
+	height: 400px;
+}
+.sidebar {
+	padding: 20px 10px 20px 10px;
+	background: #c0f5b9;
+}
+.footer-inner {
+	padding: 20px 16px 10px 16px;
+	background: #bad7f5;
+}
+
+/* ヘッダー部 */
+.hamburger {
+	border: none;
+	width: 50px;
+	height: 50px;
+	background: url(../../images/hamburger.png) no-repeat;
+	background-size: contain;
+}
+
+/* ナビゲーション */
+.navbar {
+	display: none;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	background: #565656;
+}
+.navbar li a {
+	display: block;
+	padding: 10px 8px;
+	color: #fff;
+	text-decoration: none;
+}
+.navbar li a:hover {
+	background: #fff;
+	color: #565656;
+}
+
+@media only screen and (min-width: 768px) {
+	section .container {
+		flex-flow: row;
+	}
+	main {
+		flex: 1 1 auto;
+	}
+	.sidebar {
+		flex: 0 0 340px;
+	}
+
+	/* ナビゲーション */
+	.hamburger {
+		display: none;
+	}
+	.navbar {
+		display: flex !important;
+		justify-content: flex-end;
+	}
+}
+
+/* わかりやすくするために適用しているCSS */
+body {
+	color: #444;
+}
+h1 {
+	margin: 0;
+}
+main p:last-child {
+	margin-bottom: 0;
+}
+.main-title {
+	margin: 0;
+}
+.copyright {
+	margin: 0;
+}

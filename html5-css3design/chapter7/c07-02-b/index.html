@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>見出しセルと通常セルを関連づける（headers属性） | c07-02-b</title>
+<style>
+table {
+	border-collapse: collapse;
+}
+caption {
+	color: #008cca;
+}
+th, td {
+	border: 1px solid #8fbac8;
+	padding: 8px;
+}
+th {
+	color: #fff;
+	background: #008cca;
+}
+</style>
+</head>
+<body>
+<table>
+	<caption>ホテルの予約状況</caption>
+	<tr>
+		<th id="row1">宿泊施設</th>
+		<th id="row2">6日</th>
+		<th id="row3">7日</th>
+		<th id="row4">8日</th>
+	</tr>
+	<tr>
+		<td headers="row1">グランドホテル</td>
+		<td headers="row2">○</td>
+		<td headers="row3">○</td>
+		<td headers="row4">×</td>
+	</tr>
+	<tr>
+		<td headers="row1">福龍旅館</td>
+		<td headers="row2">○</td>
+		<td headers="row3">○</td>
+		<td headers="row4">△</td>
+	</tr>
+	<tr>
+		<td headers="row1">ホテルパークサイド</td>
+		<td headers="row2">△</td>
+		<td headers="row3">×</td>
+		<td headers="row4">×</td>
+	</tr>
+</table>
+</body>
+</html>

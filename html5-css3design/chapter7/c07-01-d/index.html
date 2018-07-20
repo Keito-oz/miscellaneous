@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>セルを縦方向に結合する | c07-01-d</title>
+<style>
+table {
+	border-collapse: collapse;
+}
+.plan th,
+.plan td {
+	border: 1px solid #93C8E2;
+	padding: 4px;
+	font-weight: normal;
+}
+.plan th {
+	color: #fff;
+	background: #0092e3;
+}
+.meal {
+	text-align: center;
+}
+</style>
+</head>
+<body>
+<table class="plan">
+<tr>
+	<th rowspan="2">プラン</th>
+	<th rowspan="2">内容</th>
+	<th colspan="3">お食事</th></tr>
+<tr>
+	<th>朝</th>
+	<th>昼</th>
+	<th>夜</th>
+</tr>
+<tr>
+	<td>自由プラン</td>
+	<td>特急券・レンタカー・宿泊施設</td>
+	<td class="meal">●</td>
+	<td class="meal"></td>
+	<td class="meal"></td>
+</tr>
+<tr><td>おまかせプラン</td><td>特急券・移動（バス）・宿泊施設・入場券</td><td class="meal">●</td><td class="meal"></td><td class="meal">●</td></tr>
+</table>
+</body>
+</html>
