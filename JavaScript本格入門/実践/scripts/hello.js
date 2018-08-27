@@ -22,3 +22,5 @@ if (x>10){
         console.log('不合格');
         break;
  }
+
+ console.log(Math.random());
